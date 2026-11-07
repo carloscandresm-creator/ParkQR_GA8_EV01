@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ParkQR | Apartamentos</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+<div class="dashboard-container">
+
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <h2>ParkQR</h2>
+            <p>Administración</p>
+        </div>
+
+        <nav>
+            <a href="dashboard.html">Inicio</a>
+            <a href="apartamentos.html" class="active">Apartamentos</a>
+            <a href="#">Vehículos</a>
+            <a href="#">Visitantes</a>
+            <a href="#">Ingresos y salidas</a>
+            <a href="#">Cobros</a>
+            <a href="#">Reportes</a>
+            <a href="#">Usuarios</a>
+        </nav>
+
+        <a href="index.html" class="logout">Cerrar sesión</a>
+    </aside>
+
+    <main class="main-content">
+
+        <header class="topbar">
+            <div>
+                <h1>Apartamentos</h1>
+                <p>Gestión de apartamentos residenciales</p>
+            </div>
+            <span>Administrador</span>
+        </header>
+
+        <section class="content-section">
+
+            <div class="section-heading">
+                <div>
+                    <h2>Registrar apartamento</h2>
+                    <p>Agrega los apartamentos de las torres residenciales.</p>
+                </div>
+            </div>
+
+            <div class="form-card">
+
+                <form id="formApartamento">
+
+                    <div class="form-grid">
+
+                        <div>
+                            <label for="torre">Torre</label>
+                            <input type="number" id="torre"
+                                   min="1" placeholder="Ej. 1" required>
+                        </div>
+
+                        <div>
+                            <label for="piso">Piso</label>
+                            <input type="number" id="piso"
+                                   min="1" placeholder="Ej. 5" required>
+                        </div>
+
+                        <div>
+                            <label for="numero">Número de apartamento</label>
+                            <input type="number" id="numero"
+                                   min="1" placeholder="Ej. 502" required>
+                        </div>
+
+                    </div>
+
+                    <button type="submit">Registrar apartamento</button>
+                    <p id="mensaje"></p>
+
+                </form>
+
+            </div>
+
+            <div class="table-card">
+                <h2>Apartamentos registrados</h2>
+
+                <table>
+                    <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Torre</th>
+                        <th>Piso</th>
+                        <th>Apartamento</th>
+                    </tr>
+                    </thead>
+
+                    <tbody id="tablaApartamentos">
+                    <tr>
+                        <td colspan="4">
+                            Aún no hay apartamentos cargados.
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+</body>
+</html>

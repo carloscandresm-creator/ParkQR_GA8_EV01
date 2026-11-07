@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ParkQR | Inicio de sesión</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+<main class="login-container">
+
+    <div class="login-header">
+        <img src="img/logo QR2.png" alt="Logo ParkQR">
+        <h2>Bienvenido</h2>
+        <p>Ingresa tus datos para continuar</p>
+    </div>
+
+    <form id="loginForm" action="login" method="POST">
+
+        <label for="usuario">Usuario</label>
+        <input
+                type="text"
+                id="usuario"
+                name="usuario"
+                placeholder="Ingresa tu usuario"
+                required
+        >
+
+        <label for="password">Contraseña</label>
+        <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Ingresa tu contraseña"
+                required
+        >
+
+        <div class="options">
+            <label class="remember">
+                <input type="checkbox" id="recordarme">
+                Recordarme
+            </label>
+
+            <a href="#">¿Olvidaste tu contraseña?</a>
+        </div>
+
+        <button type="submit">Iniciar sesión</button>
+
+        <p id="mensaje"></p>
+
+    </form>
+
+    <footer>
+        <strong>ParkQR</strong>
+        <p>Control inteligente de parqueaderos</p>
+    </footer>
+
+</main>
+
+</body>
+</html>

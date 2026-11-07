@@ -1,0 +1,159 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(110deg, #104f3d, #23865e);
+    padding: 20px;
+}
+
+.login-container {
+    width: 505px;
+    max-width: 100%;
+    background: #ffffff;
+    padding: 48px 44px 36px;
+    border-radius: 22px;
+}
+
+.login-header {
+    text-align: center;
+}
+
+.login-header img {
+    display: block;
+    width: 100%;
+    max-width: 405px;
+    height: 125px;
+    object-fit: contain;
+    margin: 0 auto 30px;
+}
+
+.login-header h2 {
+    font-size: 28px;
+    color: #222;
+    margin-bottom: 8px;
+}
+
+.login-header p {
+    color: #777;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+form > label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+form > input {
+    width: 100%;
+    height: 56px;
+    padding: 0 17px;
+    border: 1px solid #d5d5d5;
+    border-radius: 11px;
+    font-size: 16px;
+    margin-bottom: 24px;
+    outline: none;
+}
+
+form > input:focus {
+    border-color: #167454;
+}
+
+form > input::placeholder {
+    color: #aaa;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin: 0 0 30px;
+    font-size: 14px;
+}
+
+.remember {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    white-space: nowrap;
+}
+
+.remember input {
+    width: 15px;
+    height: 15px;
+}
+
+.options a {
+    color: #086b4c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.options a:hover {
+    text-decoration: underline;
+}
+
+form button {
+    width: 100%;
+    height: 59px;
+    background: #176e50;
+    border: none;
+    border-radius: 11px;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #105c42;
+}
+
+#mensaje {
+    text-align: center;
+    margin-top: 12px;
+}
+
+footer {
+    border-top: 1px solid #e5e5e5;
+    margin-top: 73px;
+    padding-top: 24px;
+    text-align: center;
+}
+
+footer strong {
+    color: #08714e;
+    font-size: 17px;
+}
+
+footer p {
+    color: #999;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+@media (max-width: 550px) {
+    .login-container {
+        padding: 35px 25px;
+    }
+
+    .login-header img {
+        height: auto;
+    }
+
+    .options {
+        flex-wrap: wrap;
+    }
+}
